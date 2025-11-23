@@ -1,1 +1,0 @@
-# Diabetes-prediction-datascience-project
