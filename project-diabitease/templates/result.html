@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>Prediction Result</h1>
+
+<p><strong>Diabetes Probability:</strong> {{ proba * 100 }}%</p>
+
+{% if pred == 1 %}
+    <h2 style="color:red;">HIGH RISK</h2>
+    <p>Please consult a doctor soon.</p>
+{% else %}
+    <h2 style="color:green;">LOW RISK</h2>
+    <p>You appear safe but maintain a healthy lifestyle.</p>
+{% endif %}
+
+<a href="/">Back</a>
+
+</body>
+</html>
